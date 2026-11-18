@@ -6,7 +6,7 @@ html {
 
 body {
   min-height: 100vh;
-  background: radial-gradient(circle at 50% 50%, #bae6fd 0%, #7dd3fc 18%, #2563eb 45%, #0e2766 70%, #05102a 88%, #020614 100%) fixed;
+  background: radial-gradient(circle at 50% 50%, #f0f9ff 0%, #e0f2fe 18%, #93c5fd 35%, #2563eb 55%, #0e2766 72%, #05102a 88%, #020614 100%) fixed;
   color: #f8fafc;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
   overflow-x: hidden;
