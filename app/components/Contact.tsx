@@ -35,29 +35,29 @@ export default function Contact() {
 
   return (
     <section id="contact" className="relative scroll-mt-24 px-6 py-20">
-      <div className="mx-auto max-w-5xl">
+      <div className="mx-auto max-w-6xl">
         {/* Section Header */}
-        <div className="mb-12 text-center">
-          <p className="text-xs font-semibold uppercase tracking-wider text-sky-400">
+        <div className="mb-14 text-center">
+          <p className="text-xs font-bold uppercase tracking-wider text-sky-300">
             Let&apos;s Connect
           </p>
-          <h2 className="mt-2 text-3xl sm:text-4xl font-bold tracking-tight text-white">
+          <h2 className="mt-2 text-3xl sm:text-5xl font-extrabold tracking-tight text-white drop-shadow-md">
             Get In Touch
           </h2>
-          <div className="mx-auto mt-3 h-1 w-12 rounded-full bg-gradient-to-r from-blue-500 to-sky-400"></div>
-          <p className="mx-auto mt-3 max-w-md text-sm text-slate-400">
+          <div className="mx-auto mt-3 h-1.5 w-16 rounded-full bg-gradient-to-r from-blue-400 to-sky-300"></div>
+          <p className="mx-auto mt-4 max-w-md text-sm text-slate-300">
             Have a question, opportunity, or want to collaborate on a project?
             Drop me a line below!
           </p>
         </div>
 
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-12 items-start">
+        <div className="grid grid-cols-1 gap-10 md:grid-cols-12 items-start">
           {/* Left: Contact Info & Socials */}
           <div className="md:col-span-5 space-y-6">
             {/* Direct Email Card */}
-            <div className="rounded-2xl border border-sky-950/80 bg-[#0b1636]/70 p-6 shadow-xl backdrop-blur-md transition-all duration-300 hover:border-sky-800/80">
+            <div className="rounded-2xl border border-white/15 bg-[#05112e]/75 backdrop-blur-md p-6 shadow-xl transition-all duration-300 hover:border-sky-400/60">
               <h3 className="text-base font-bold text-white flex items-center gap-2">
-                <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-sky-500/10 text-sky-400">
+                <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-sky-500/20 text-sky-300">
                   <svg
                     className="h-4 w-4"
                     fill="none"
@@ -74,21 +74,21 @@ export default function Contact() {
                 </span>
                 Direct Email
               </h3>
-              <p className="mt-2 text-xs text-slate-400">
+              <p className="mt-2 text-xs text-slate-300">
                 Click to copy or reach me directly:
               </p>
 
               <div className="mt-4 flex flex-col gap-2.5">
                 <a
                   href={`mailto:${emailAddress}`}
-                  className="truncate text-sm font-semibold text-sky-300 hover:text-white transition-colors"
+                  className="truncate text-sm font-bold text-sky-300 hover:text-white transition-colors"
                 >
                   {emailAddress}
                 </a>
                 <button
                   type="button"
                   onClick={handleCopyEmail}
-                  className="inline-flex w-fit items-center gap-1.5 rounded-lg border border-sky-900/60 bg-[#0e1d45]/80 px-3 py-1.5 text-xs font-medium text-slate-200 transition-all hover:border-sky-400 hover:bg-[#13275c] hover:text-sky-200 active:scale-95"
+                  className="inline-flex w-fit items-center gap-1.5 rounded-lg border border-white/20 bg-white/10 px-3 py-1.5 text-xs font-semibold text-white shadow-xs transition-all hover:border-sky-400 hover:bg-sky-500/20 active:scale-95"
                 >
                   {copiedEmail ? (
                     <>
@@ -130,9 +130,9 @@ export default function Contact() {
             </div>
 
             {/* Socials Card */}
-            <div className="rounded-2xl border border-sky-950/80 bg-[#0b1636]/70 p-6 shadow-xl backdrop-blur-md transition-all duration-300 hover:border-sky-800/80">
+            <div className="rounded-2xl border border-white/15 bg-[#05112e]/75 backdrop-blur-md p-6 shadow-xl transition-all duration-300 hover:border-sky-400/60">
               <h3 className="text-base font-bold text-white">Social Profiles</h3>
-              <p className="mt-1 text-xs text-slate-400">
+              <p className="mt-1 text-xs text-slate-300">
                 Explore my repositories and professional profile:
               </p>
 
@@ -142,10 +142,10 @@ export default function Contact() {
                   href="https://github.com/vishwashreem"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group flex items-center justify-between rounded-xl border border-sky-900/60 bg-[#0e1d45]/60 p-3 transition-all duration-200 hover:border-sky-400 hover:bg-[#13275c]/80"
+                  className="group flex items-center justify-between rounded-xl border border-white/15 bg-white/5 p-3 transition-all duration-200 hover:border-sky-400 hover:bg-white/10"
                 >
                   <div className="flex items-center gap-3">
-                    <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-[#070f26] text-slate-300 group-hover:text-white">
+                    <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-black/40 text-slate-300 group-hover:text-white transition-colors">
                       <svg
                         className="h-4 w-4 fill-current"
                         viewBox="0 0 24 24"
@@ -158,10 +158,10 @@ export default function Contact() {
                       </svg>
                     </div>
                     <div>
-                      <span className="block text-sm font-semibold text-white group-hover:text-sky-300">
+                      <span className="block text-sm font-bold text-white group-hover:text-sky-300">
                         GitHub
                       </span>
-                      <span className="block text-xs text-slate-400">
+                      <span className="block text-xs text-slate-300 font-medium">
                         @vishwashreem
                       </span>
                     </div>
@@ -176,10 +176,10 @@ export default function Contact() {
                   href="https://linkedin.com/in/vishwashreem"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group flex items-center justify-between rounded-xl border border-sky-900/60 bg-[#0e1d45]/60 p-3 transition-all duration-200 hover:border-sky-400 hover:bg-[#13275c]/80"
+                  className="group flex items-center justify-between rounded-xl border border-white/15 bg-white/5 p-3 transition-all duration-200 hover:border-sky-400 hover:bg-white/10"
                 >
                   <div className="flex items-center gap-3">
-                    <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-[#070f26] text-sky-400 group-hover:text-white">
+                    <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-blue-600/30 text-sky-300 group-hover:text-white transition-colors">
                       <svg
                         className="h-4 w-4 fill-current"
                         viewBox="0 0 24 24"
@@ -188,10 +188,10 @@ export default function Contact() {
                       </svg>
                     </div>
                     <div>
-                      <span className="block text-sm font-semibold text-white group-hover:text-sky-300">
+                      <span className="block text-sm font-bold text-white group-hover:text-sky-300">
                         LinkedIn
                       </span>
-                      <span className="block text-xs text-slate-400">
+                      <span className="block text-xs text-slate-300 font-medium">
                         Vishwashree M
                       </span>
                     </div>
@@ -206,14 +206,14 @@ export default function Contact() {
 
           {/* Right: Contact Form */}
           <div className="md:col-span-7">
-            <div className="rounded-2xl border border-sky-950/80 bg-[#0b1636]/70 p-7 sm:p-8 shadow-xl backdrop-blur-md">
+            <div className="rounded-2xl border border-white/15 bg-[#05112e]/75 backdrop-blur-md p-7 sm:p-8 shadow-xl">
               <h3 className="text-xl font-bold text-white">Send a Message</h3>
-              <p className="mt-1 text-sm text-slate-400">
+              <p className="mt-1 text-sm text-slate-300 font-medium">
                 Leave your information and message below:
               </p>
 
               {isSubmitted && (
-                <div className="mt-4 rounded-xl border border-emerald-500/30 bg-emerald-950/50 p-4 text-emerald-300 text-sm flex items-center gap-3">
+                <div className="mt-4 rounded-xl border border-emerald-400/40 bg-emerald-950/60 p-4 text-emerald-200 text-sm flex items-center gap-3 backdrop-blur-sm">
                   <svg
                     className="h-5 w-5 text-emerald-400 flex-shrink-0"
                     fill="none"
@@ -227,7 +227,7 @@ export default function Contact() {
                       d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
                     />
                   </svg>
-                  <span>
+                  <span className="font-semibold">
                     Thank you! Your message has been sent successfully. I will get back to you soon!
                   </span>
                 </div>
@@ -237,7 +237,7 @@ export default function Contact() {
                 <div>
                   <label
                     htmlFor="name"
-                    className="block text-xs font-semibold uppercase tracking-wider text-slate-300 mb-1"
+                    className="block text-xs font-bold uppercase tracking-wider text-slate-200 mb-1"
                   >
                     Name
                   </label>
@@ -251,14 +251,14 @@ export default function Contact() {
                       setFormData({ ...formData, name: e.target.value })
                     }
                     placeholder="Your name"
-                    className="w-full rounded-xl border border-sky-950 bg-[#070f26]/80 px-4 py-3 text-sm text-white placeholder-slate-500 outline-none transition-all duration-200 focus:border-sky-400 focus:ring-2 focus:ring-sky-500/20"
+                    className="w-full rounded-xl border border-white/20 bg-black/30 px-4 py-3 text-sm text-white placeholder-slate-400 outline-none transition-all duration-200 focus:border-sky-400 focus:ring-2 focus:ring-sky-400/20"
                   />
                 </div>
 
                 <div>
                   <label
                     htmlFor="email"
-                    className="block text-xs font-semibold uppercase tracking-wider text-slate-300 mb-1"
+                    className="block text-xs font-bold uppercase tracking-wider text-slate-200 mb-1"
                   >
                     Email
                   </label>
@@ -272,14 +272,14 @@ export default function Contact() {
                       setFormData({ ...formData, email: e.target.value })
                     }
                     placeholder="your.email@example.com"
-                    className="w-full rounded-xl border border-sky-950 bg-[#070f26]/80 px-4 py-3 text-sm text-white placeholder-slate-500 outline-none transition-all duration-200 focus:border-sky-400 focus:ring-2 focus:ring-sky-500/20"
+                    className="w-full rounded-xl border border-white/20 bg-black/30 px-4 py-3 text-sm text-white placeholder-slate-400 outline-none transition-all duration-200 focus:border-sky-400 focus:ring-2 focus:ring-sky-400/20"
                   />
                 </div>
 
                 <div>
                   <label
                     htmlFor="message"
-                    className="block text-xs font-semibold uppercase tracking-wider text-slate-300 mb-1"
+                    className="block text-xs font-bold uppercase tracking-wider text-slate-200 mb-1"
                   >
                     Message
                   </label>
@@ -293,13 +293,13 @@ export default function Contact() {
                       setFormData({ ...formData, message: e.target.value })
                     }
                     placeholder="Tell me about your project, idea, or role..."
-                    className="w-full rounded-xl border border-sky-950 bg-[#070f26]/80 px-4 py-3 text-sm text-white placeholder-slate-500 outline-none transition-all duration-200 focus:border-sky-400 focus:ring-2 focus:ring-sky-500/20 resize-none"
+                    className="w-full rounded-xl border border-white/20 bg-black/30 px-4 py-3 text-sm text-white placeholder-slate-400 outline-none transition-all duration-200 focus:border-sky-400 focus:ring-2 focus:ring-sky-400/20 resize-none"
                   />
                 </div>
 
                 <button
                   type="submit"
-                  className="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-blue-600 to-sky-500 px-6 py-3.5 text-sm font-semibold text-white shadow-lg shadow-sky-500/25 transition-all duration-200 hover:brightness-110 hover:shadow-sky-500/40 active:scale-95"
+                  className="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-blue-600 to-sky-500 px-6 py-3.5 text-sm font-bold text-white shadow-lg shadow-blue-600/30 transition-all duration-200 hover:brightness-110 hover:scale-[1.01] active:scale-95"
                 >
                   <span>Send Message</span>
                   <svg

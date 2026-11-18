@@ -2,27 +2,28 @@
 
 html {
   scroll-behavior: smooth;
-  color-scheme: dark;
 }
 
 body {
-  background-color: #070f26;
-  color: #f1f5f9;
+  min-height: 100vh;
+  background: radial-gradient(circle at 50% 50%, #bae6fd 0%, #7dd3fc 18%, #2563eb 45%, #0e2766 70%, #05102a 88%, #020614 100%) fixed;
+  color: #f8fafc;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
   overflow-x: hidden;
 }
 
 /* Custom scrollbar */
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 9px;
 }
 ::-webkit-scrollbar-track {
-  background: #070f26;
+  background: #020614;
 }
 ::-webkit-scrollbar-thumb {
-  background: #1e2d5a;
-  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 6px;
+  border: 2px solid #020614;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #38bdf8;
+  background: #ffffff;
 }

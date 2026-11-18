@@ -4,10 +4,14 @@ import About from "./components/About";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import CustomCursor from "./components/CustomCursor";
 
 export default function Home() {
   return (
-    <div className="relative min-h-screen bg-[#070f26] text-slate-100 selection:bg-sky-500 selection:text-white">
+    <div className="relative min-h-screen selection:bg-sky-500 selection:text-white">
+      {/* White blinking circle cursor */}
+      <CustomCursor />
+
       {/* 1. Navbar */}
       <Navbar />
 
@@ -15,7 +19,7 @@ export default function Home() {
         {/* 2. Hero */}
         <Hero />
 
-        {/* 3. About */}
+        {/* 3. About (with 2 separate 3D white pop-up boxes for About Me & Technical Skills) */}
         <About />
 
         {/* 4. Projects */}

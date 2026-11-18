@@ -11,10 +11,10 @@ interface ProjectCardProps {
 
 export default function ProjectCard({ project }: ProjectCardProps) {
   return (
-    <article className="group relative flex flex-col justify-between rounded-2xl border border-sky-950/80 bg-[#0b1636]/70 p-6 sm:p-7 shadow-xl backdrop-blur-md transition-all duration-300 hover:-translate-y-1.5 hover:border-sky-500/60 hover:bg-[#0f1d47]/90 hover:shadow-2xl hover:shadow-sky-500/10">
+    <article className="group relative flex flex-col justify-between rounded-2xl border border-white/15 bg-[#05112e]/75 backdrop-blur-md p-6 sm:p-7 shadow-xl transition-all duration-300 hover:-translate-y-2 hover:border-sky-400/80 hover:bg-[#091b45]/90 hover:shadow-2xl hover:shadow-sky-500/20">
       <div>
         {/* Top Folder Icon */}
-        <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-sky-500/10 text-sky-400 group-hover:bg-sky-500/20 group-hover:scale-105 transition-all">
+        <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-sky-500/15 text-sky-300 group-hover:bg-sky-400 group-hover:text-slate-900 group-hover:scale-105 transition-all duration-200">
           <svg
             className="h-5 w-5"
             fill="none"
@@ -36,7 +36,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
         </h3>
 
         {/* Description */}
-        <p className="mt-2.5 text-sm text-slate-300 leading-relaxed">
+        <p className="mt-2.5 text-sm text-slate-300 leading-relaxed font-normal">
           {project.description}
         </p>
 
@@ -45,7 +45,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
           {project.tags.map((tag) => (
             <span
               key={tag}
-              className="rounded-md border border-sky-900/60 bg-[#070f26]/80 px-2.5 py-1 text-xs font-medium text-sky-300"
+              className="rounded-md border border-sky-400/20 bg-sky-950/40 px-2.5 py-1 text-xs font-semibold text-sky-200 shadow-xs"
             >
               {tag}
             </span>
@@ -54,12 +54,12 @@ export default function ProjectCard({ project }: ProjectCardProps) {
       </div>
 
       {/* GitHub Link */}
-      <div className="mt-8 border-t border-sky-950/80 pt-4">
+      <div className="mt-8 border-t border-white/10 pt-4">
         <a
           href={project.githubUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center gap-2 text-sm font-semibold text-sky-400 transition-all duration-200 hover:text-white hover:gap-2.5"
+          className="inline-flex items-center gap-2 text-sm font-bold text-sky-300 transition-all duration-200 hover:text-white hover:gap-2.5"
         >
           {/* GitHub SVG Icon */}
           <svg className="h-4 w-4 fill-current" viewBox="0 0 24 24">

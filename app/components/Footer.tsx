@@ -1,22 +1,22 @@
 export default function Footer() {
   return (
-    <footer className="border-t border-sky-950/80 bg-[#050a1a] py-10 px-6">
-      <div className="mx-auto flex max-w-5xl flex-col items-center justify-between gap-6 md:flex-row">
+    <footer className="w-full border-t border-white/10 bg-[#020614]/80 py-10 px-6 backdrop-blur-md">
+      <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-6 md:flex-row">
         {/* Brand & Requested Copyright */}
         <div className="flex flex-col items-center gap-1 md:items-start">
           <div className="flex items-center gap-2">
-            <span className="flex h-6 w-6 items-center justify-center rounded-md bg-gradient-to-tr from-blue-600 to-sky-400 text-xs font-bold text-white shadow-sm">
+            <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-gradient-to-tr from-blue-600 to-sky-400 text-xs font-bold text-white shadow-sm">
               VM
             </span>
-            <span className="font-semibold text-white">Vishwashree M</span>
+            <span className="font-bold text-white">Vishwashree M</span>
           </div>
-          <p className="text-xs text-slate-400 mt-1">
+          <p className="text-xs text-slate-400 mt-1 font-semibold">
             © 2026 Vishwashree
           </p>
         </div>
 
         {/* Quick Nav Links */}
-        <div className="flex items-center gap-6 text-xs font-medium text-slate-400">
+        <div className="flex items-center gap-6 text-xs font-bold text-slate-300">
           <a href="#about" className="hover:text-sky-300 transition-colors">
             About
           </a>
@@ -47,7 +47,7 @@ export default function Footer() {
         {/* Back to top button */}
         <a
           href="#"
-          className="group inline-flex items-center gap-1.5 rounded-lg border border-sky-950 bg-[#0e1d45]/60 px-3 py-1.5 text-xs text-slate-300 hover:border-sky-700 hover:text-white transition-all"
+          className="group inline-flex items-center gap-1.5 rounded-xl border border-white/20 bg-white/10 px-3.5 py-2 text-xs font-bold text-slate-200 shadow-xs hover:border-white hover:text-white hover:bg-white/20 transition-all active:scale-95"
         >
           <span>Back to top</span>
           <svg

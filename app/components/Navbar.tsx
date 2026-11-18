@@ -12,7 +12,7 @@ export default function Navbar() {
   ];
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-sky-950/60 bg-[#070f26]/85 backdrop-blur-md transition-all">
+    <header className="sticky top-0 z-50 w-full border-b border-white/10 bg-[#040c24]/75 backdrop-blur-md transition-all">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
         {/* Brand Logo */}
         <a
@@ -33,14 +33,14 @@ export default function Navbar() {
             <a
               key={link.label}
               href={link.href}
-              className="relative text-sm font-medium text-slate-300 transition-colors duration-150 hover:text-sky-300"
+              className="text-sm font-semibold text-slate-200 transition-colors duration-150 hover:text-sky-300"
             >
               {link.label}
             </a>
           ))}
           <a
             href="#contact"
-            className="rounded-xl bg-gradient-to-r from-blue-600 to-sky-500 px-4 py-2 text-sm font-semibold text-white shadow-md shadow-sky-500/20 transition-all duration-200 hover:brightness-110 hover:shadow-sky-500/30 active:scale-95"
+            className="rounded-xl bg-gradient-to-r from-blue-600 to-sky-500 px-4 py-2 text-sm font-semibold text-white shadow-md shadow-sky-500/20 transition-all duration-200 hover:brightness-110 active:scale-95"
           >
             Get In Touch
           </a>
@@ -51,7 +51,7 @@ export default function Navbar() {
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           type="button"
           aria-label="Toggle menu"
-          className="inline-flex items-center justify-center rounded-lg p-2 text-slate-300 hover:bg-[#0f1f4d] hover:text-white focus:outline-none focus:ring-2 focus:ring-sky-400 md:hidden"
+          className="inline-flex items-center justify-center rounded-lg p-2 text-slate-300 hover:bg-white/10 hover:text-white focus:outline-none focus:ring-2 focus:ring-sky-400 md:hidden"
         >
           {isMobileMenuOpen ? (
             <svg
@@ -87,14 +87,14 @@ export default function Navbar() {
 
       {/* Mobile Drawer */}
       {isMobileMenuOpen && (
-        <div className="border-b border-sky-950 bg-[#070f26]/95 px-6 py-4 backdrop-blur-lg md:hidden">
+        <div className="border-b border-white/10 bg-[#040c24]/95 px-6 py-4 backdrop-blur-lg md:hidden">
           <nav className="flex flex-col space-y-3">
             {navLinks.map((link) => (
               <a
                 key={link.label}
                 href={link.href}
                 onClick={() => setIsMobileMenuOpen(false)}
-                className="rounded-lg px-3 py-2 text-base font-medium text-slate-300 transition-colors hover:bg-[#0f1f4d] hover:text-sky-300"
+                className="rounded-lg px-3 py-2 text-base font-medium text-slate-200 transition-colors hover:bg-white/10 hover:text-sky-300"
               >
                 {link.label}
               </a>

@@ -26,25 +26,25 @@ export default function Projects() {
   ];
 
   return (
-    <section id="projects" className="relative scroll-mt-24 px-6 py-20 bg-[#050b1d]/50">
+    <section id="projects" className="relative scroll-mt-24 px-6 py-20">
       <div className="mx-auto max-w-6xl">
         {/* Section Header */}
-        <div className="mb-12 text-center">
-          <p className="text-xs font-semibold uppercase tracking-wider text-sky-400">
+        <div className="mb-14 text-center">
+          <p className="text-xs font-bold uppercase tracking-wider text-sky-300">
             Featured Work
           </p>
-          <h2 className="mt-2 text-3xl sm:text-4xl font-bold tracking-tight text-white">
+          <h2 className="mt-2 text-3xl sm:text-5xl font-extrabold tracking-tight text-white drop-shadow-md">
             Projects
           </h2>
-          <div className="mx-auto mt-3 h-1 w-12 rounded-full bg-gradient-to-r from-blue-500 to-sky-400"></div>
-          <p className="mx-auto mt-3 max-w-lg text-sm text-slate-400">
+          <div className="mx-auto mt-3 h-1.5 w-16 rounded-full bg-gradient-to-r from-blue-400 to-sky-300"></div>
+          <p className="mx-auto mt-4 max-w-lg text-sm text-slate-300">
             A showcase of web applications and software tools built with modern
             frontend and backend architectures.
           </p>
         </div>
 
         {/* Projects Grid */}
-        <div className="grid grid-cols-1 gap-7 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
           {projects.map((project) => (
             <ProjectCard key={project.title} project={project} />
           ))}
